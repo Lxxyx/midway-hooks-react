@@ -5,7 +5,8 @@
   "scripts": {
     "start": "react-app-rewired start",
     "dev": "npm run start",
-    "build": "react-app-rewired build",
+    "build": "f package && mv fake api",
+    "build-front-end": "react-app-rewired build",
     "test": "react-app-rewired test",
     "eject": "react-scripts eject"
   },
@@ -34,7 +35,7 @@
   "midway-integration": {
     "tsCodeRoot": "src/apis",
     "lifecycle": {
-      "before:package:cleanup": "npm run build"
+      "before:package:cleanup": "npm run build-front-end"
     }
   },
   "eslintConfig": {
@@ -44,7 +45,11 @@
     }
   },
   "browserslist": {
-    "production": [">0.2%", "not dead", "not op_mini all"],
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
