@@ -11,15 +11,17 @@
     "eject": "react-scripts eject"
   },
   "dependencies": {
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
     "@midwayjs/faas": "^1.0.0",
     "@midwayjs/faas-middleware-static-file": "^1.0.0",
-    "@midwayjs/hooks": "0.x.x"
+    "@midwayjs/hooks": "0.x.x",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   },
   "devDependencies": {
+    "@midwayjs/faas-cli": "^1.2.29",
     "@midwayjs/faas-cli-plugin-midway-hooks": "0.x.x",
     "@midwayjs/faas-dev-pack": "^1.0.0",
+    "@midwayjs/fcli-plugin-fc": "^1.2.29",
     "@midwayjs/hooks-loader": "^0.0.33",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",

@@ -24,3 +24,4 @@ package-lock.json
 .serverless
 .env_tmp
 build
+.vercel
